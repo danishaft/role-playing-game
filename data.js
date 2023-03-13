@@ -5,15 +5,27 @@ export const characterData = {
         health: 60,
         diceRollCount: 3,
         currentDiceScore: [],
-        dead: false
         
     },
-    monster: {
-        name: 'orc',
+    orc: {
+        name: "orc",
         avatar: 'images/orc.jpg',
-        health: 10,
+        health: 40,
         diceRollCount: 1,
         currentDiceScore: [],
-        dead: false
+    },
+    demon: {
+        name: "Demon",
+        avatar: "images/orc.jpg",
+        health: 25,
+        diceRollCount: 2,
+        currentDiceScore: [],
+    },
+    goblin: {
+        name: "Goblin",
+        avatar: "images/orc.jpg",
+        health: 20,
+        diceRollCount: 3,
+        currentDiceScore: [],
     }
 }

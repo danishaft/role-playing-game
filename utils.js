@@ -1,4 +1,5 @@
 const getDiceScoreArr = (param) => {
+    // this is an array constructor that create a new array and fill it with what item you want 
     const random = new Array(param).fill(0).map((count) => {
         return Math.floor(Math.random() * 6) + 1
     })
@@ -12,4 +13,9 @@ const getDicePlaceholderHtml = (diceRollCount) => {
     return placeHolder
 }
 
-export {getDiceScoreArr, getDicePlaceholderHtml}
+const getPercentage = (maximumHealth, remainingHealth) => {
+    return 100 * remainingHealth / maximumHealth
+}
+
+
+export {getDiceScoreArr, getDicePlaceholderHtml, getPercentage}
